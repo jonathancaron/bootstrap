@@ -22,52 +22,54 @@
                       <img src="./img/cvok.png" class="img-rounded"  width="35" height="35">
                   </div>
                 </div>
-                <div class="fea">
-                  <div class="col-sm-12 col-md-8">
-                    <h3 class="catBold">Mes messages <span class="jqueryToggle"><img id="imgCat" src="./img/flechetoggle.png" width="15" height="15"></h3></span>
-                    <div class="contBorder" style="background-color:#ffeae2;">
-                      <div class="messageMargin">
 
 
-                        <div class="col-md-12">
-                          <span class="espacing1">Provenance</span>
-
-                          <span class="espacing1">Titre</span>
-
-                          <span class="espacing1">Message</span>
-                        </div>
-
-                        <div class="col-md-12">
-                          <hr class="style1">
-                        </div>
-                        <table>
-                            <?php
-                            $str="Proximus Recrutement";
-                            if (strlen($str) > 15)
-                              $str = substr($str, 0, 12) . '...';
-                              ?>
-                              <span class="espacing4"><?php echo $str; ?></span>
-
-                            <?php
-                            $str="Employé gestion bureautique à temps plein";
-                            if (strlen($str) > 23)
-                              $str = substr($str, 0, 20) . '...';
-                              ?>
-                              <span class="espacing5"><?php echo $str; ?></span>
-
+                <div class="container col-md-8">
+                  <h3 class="catBold">Mes messages <span class="jqueryToggle"><img id="imgCat" src="./img/flechetoggle.png" width="15" height="15"></h3></span>
+                  <table class="table table-bordered contBorder">
+                    <thead>
+                      <tr>
+                        <th>De</th>
+                        <th>Titre</th>
+                        <th>Message</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <?php
+                          $str="Proximus Recrutement";
+                          if (strlen($str) > 20)
+                          $str = substr($str, 0, 17) . '...';
+                          echo $str; ?>
+                        </td>
+                        <td>
+                          <?php
+                          $str="Employé gestion bureautique à temps plein";
+                          if (strlen($str) > 20)
+                          $str = substr($str, 0, 17) . '...';
+                          echo $str; ?>
+                        </td>
+                        <td>
                           <?php
                           $str="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et placerat dui. In posuere metus et elit placerat tristique. Maecenas eu est in sem ullamcorper tincidunt.";
-                          if (strlen($str) > 43)
-                            $str = substr($str, 0, 40) . '...';
-                            ?>
-                            <span class="espacing6"><?php echo $str; ?></span>
-
-                        </table>
-                      </div>
-
-                    </div>
-
-                    </div>
+                          if (strlen($str) > 40)
+                          $str = substr($str, 0, 37) . '...';
+                          echo $str; ?>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Mary</td>
+                        <td>Moe</td>
+                        <td>mary@example.com</td>
+                      </tr>
+                      <tr>
+                        <td>July</td>
+                        <td>Dooley</td>
+                        <td>july@example.com</td>
+                      </tr>
+                    </tbody>
+                  </table>
                 </div>
             </div>
             </div>
