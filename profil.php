@@ -26,7 +26,21 @@
                   <div class="col-md-8">
                     <h3 class="catBold">Mes messages <span class="jqueryToggle"><img id="imgCat" src="./img/flechetoggle.png" width="15" height="15"></h3></span>
                     <div class="contBorder">
-                      <p>test test</p>
+                      <div class="messageMargin">
+                        <table>
+                          <tr>
+                            <span class="espacing1">Provenance</span>
+                          </tr>
+                          <tr>
+                            <span class="espacing2">Titre</span>
+                          </tr>
+                          <tr>
+                            <span class="espacing3">Message</span>
+                          </tr>
+                          <hr class="style1">
+                        </table>
+                      </div>
+
                     </div>
 
                     </div>

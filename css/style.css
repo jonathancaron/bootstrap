@@ -804,3 +804,20 @@ Responsive media queries
 .colBold{
 	font-weight: bold;
 }
+.messageMargin{
+	margin-left: 10px;
+}
+.espacing1{
+	margin-right: 60px; color: #515151; display: inline-block; font-weight: bold; font-size: 90%;
+}
+.espacing2{
+	margin-right: 120px; color: #515151; display: inline-block; font-weight: bold; font-size: 90%;
+}
+.espacing3{
+	margin-right: 40px; color: #515151; display: inline-block; font-weight: bold; font-size: 90%;
+}
+hr.style1{
+	border-top: 1px solid #8c8b8b;
+	margin-top: -1px;
+	margin-right: 11px;
+}
