@@ -24,7 +24,7 @@
                 </div>
                 <div class="fea">
                   <div class="col-md-8">
-                    <h3>Mes messages <span class="jqueryToggle"><img src="./img/flechetoggle.png" width="15" height="15"></h3></span>
+                    <h3 class="catBold">Mes messages <span class="jqueryToggle"><img id="imgCat" src="./img/flechetoggle.png" width="15" height="15"></h3></span>
                     <div class="contBorder">
                       <p>test test</p>
                     </div>

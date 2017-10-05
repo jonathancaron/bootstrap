@@ -794,3 +794,13 @@ Responsive media queries
 
 
 }
+
+.flip {
+  transform: rotate(-180deg);
+}
+.colNotBold{
+	color:#6c6c6d;
+}
+.colBold{
+	font-weight: bold;
+}
