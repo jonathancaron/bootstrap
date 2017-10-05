@@ -793,6 +793,7 @@ Responsive media queries
 	border-radius: 6px;
 
 
+
 }
 
 .flip {
@@ -814,10 +815,19 @@ Responsive media queries
 	margin-right: 120px; color: #515151; display: inline-block; font-weight: bold; font-size: 90%;
 }
 .espacing3{
-	margin-right: 40px; color: #515151; display: inline-block; font-weight: bold; font-size: 90%;
+ color: #515151; display: inline-block; font-weight: bold; font-size: 90%;
 }
 hr.style1{
 	border-top: 1px solid #8c8b8b;
 	margin-top: -1px;
 	margin-right: 11px;
+}
+.espacing4{
+	margin-left: 12px; margin-right: 20px; color: #515151; display: inline-block; font-weight: bold; font-size: 90%;
+}
+.espacing5{
+	margin-right: 20px; color: #515151; display: inline-block; font-weight: bold; font-size: 90%;
+}
+.espacing6{
+	margin-right: 20px; color: #515151; display: inline-block; font-weight: bold; font-size: 90%;
 }
