@@ -788,5 +788,9 @@ Responsive media queries
 }
 
 .contBorder{
-	border: solid 2px black;
+	border: solid 1.5px #757f86;
+	margin-top:25px;
+	border-radius: 6px;
+
+
 }

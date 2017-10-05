@@ -23,15 +23,12 @@
                   </div>
                 </div>
                 <div class="fea">
-                  <div class="col-md-4">
-                      <h4>Toons Background</h4>
-                      <p>Donec et lectus bibendum dolor dictum auctor in ac erat. Vestibulum egestas sollicitudin metus non urna in eros tincidunt convallis id id nisi in interdum.</p>
-                  </div>
-                </div>
-                <div class="fea">
-                  <div class="col-md-4">
-                      <h4>Award Winning Design</h4>
-                      <p>Donec et lectus bibendum dolor dictum auctor in ac erat. Vestibulum egestas sollicitudin metus non urna in eros tincidunt convallis id id nisi in interdum.</p>
+                  <div class="col-md-8">
+                    <h3>Mes messages</h3>
+                    <div class="contBorder">
+                      <p> </p>
+                    </div>
+
                     </div>
                 </div>
             </div>
