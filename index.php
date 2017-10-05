@@ -16,29 +16,7 @@
   </head>
   <body>
     <?php include('./requires/dblog.php'); ?>
-    <!--Navigation bar-->
-    <nav class="navbar navbar-default navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="index.php">Men<span>tor</span></a>
-        </div>
-        <div class="collapse navbar-collapse" id="myNavbar">
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="#feature">Features</a></li>
-          <li><a href="#organisations">Organisations</a></li>
-          <li><a href="#courses">Courses</a></li>
-          <li><a href="#pricing">Pricing</a></li>
-          <li><a href="#" data-target="#login" data-toggle="modal">Connexion</a></li>
-          <li class="btn-trial"><a href="#footer">Contact</a></li>
-        </ul>
-        </div>
-      </div>
-    </nav>
+    <?php  include('./includes/navbar.php'); ?>
     <!--/ Navigation bar-->
     <!--Modal box-->
     <div class="modal fade" id="login" role="dialog">
@@ -511,47 +489,7 @@
       </div>
     </section>
     <!--/ Contact-->
-    <!--Footer-->
-    <footer id="footer" class="footer">
-      <div class="container text-center">
-
-      <h3>Start Your Free Trial Now!</h3>
-
-      <form class="mc-trial row">
-        <div class="form-group col-md-3 col-md-offset-2 col-sm-4">
-          <div class=" controls">
-            <input name="name" placeholder="Enter Your Name" class="form-control" type="text">
-          </div>
-        </div><!-- End email input -->
-        <div class="form-group col-md-3 col-sm-4">
-          <div class=" controls">
-            <input name="EMAIL" placeholder="Enter Your email" class="form-control" type="email">
-          </div>
-        </div><!-- End email input -->
-        <div class="col-md-2 col-sm-4">
-          <p>
-            <button name="submit" type="submit" class="btn btn-block btn-submit">
-            Submit <i class="fa fa-arrow-right"></i></button>
-          </p>
-        </div>
-      </form><!-- End newsletter-form -->
-      <ul class="social-links">
-        <li><a href="#link"><i class="fa fa-twitter fa-fw"></i></a></li>
-        <li><a href="#link"><i class="fa fa-facebook fa-fw"></i></a></li>
-        <li><a href="#link"><i class="fa fa-google-plus fa-fw"></i></a></li>
-        <li><a href="#link"><i class="fa fa-dribbble fa-fw"></i></a></li>
-        <li><a href="#link"><i class="fa fa-linkedin fa-fw"></i></a></li>
-      </ul>
-        ©2017 LeSite. All rights reserved
-      </div>
-    </footer>
-    <!--/ Footer-->
-
-    <script src="js/jquery.min.js"></script>
-    <script src="js/jquery.easing.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/custom.js"></script>
-    <script src="contactform/contactform.js"></script>
-
+    <?php  include('./includes/footer.php'); ?>
+    <?php  include('./requires/jscss.php'); ?>
   </body>
 </html>
