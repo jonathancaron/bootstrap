@@ -778,3 +778,15 @@ Responsive media queries
         text-align: center;
     }
 }
+
+.profilTitre{
+	font-weight: bold;
+	font-size: 20px;
+}
+.profilSousTitre{
+
+}
+
+.contBorder{
+	border: solid 2px black;
+}
