@@ -23,7 +23,7 @@
                   </div>
                 </div>
 
-
+                
                 <div class="container col-md-8">
                   <h3 class="catBold">Mes messages <span class="jqueryToggle"><img id="imgCat" src="./img/flechetoggle.png" width="15" height="15"></h3></span>
                   <table class="table table-bordered contBorder">
@@ -59,17 +59,31 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>Mary</td>
-                        <td>Moe</td>
-                        <td>mary@example.com</td>
-                      </tr>
-                      <tr>
-                        <td>July</td>
-                        <td>Dooley</td>
-                        <td>july@example.com</td>
+                        <td>BeCode</td>
+                        <td>Recrutement formateur</td>
+                        <td>Bonjour Jonathan, Nous vous contact...</td>
                       </tr>
                     </tbody>
                   </table>
+                  <br>
+                  <h3 class="catBold">Mon compte <span class="jqueryToggle2"><img id="imgCat" src="./img/flechetoggle.png" width="15" height="15"></h3></span>
+                  <table class="table table-bordered contBorder">
+                    <thead>
+                      <tr>
+                        <th>De</th>
+                        <th>Titre</th>
+
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+
+                      </tr>
+
+                    </tbody>
+                  </table>
+
+
                 </div>
             </div>
             </div>
