@@ -111,8 +111,8 @@
                                       </div><!--end row-->
                                       <div style="clear: both;"></div>
                                       </div>
-                          <div class="row no-gutter">
-                          <h5 class="policy_title"><strong>Here's why you should give us a call.</strong></h5>
+                            <!--<div class="row no-gutter">
+                         <h5 class="policy_title"><strong>Here's why you should give us a call.</strong></h5>
 
                           <ul>
                             <li class="col-lg-5 col-md-5 col-sm-5 col-xs-5">
@@ -139,18 +139,19 @@
                             <li class="col-lg-5 col-md-5 col-sm-5 col-xs-5">
                               <img src="http://images.patioproductsusa.com/site/common/patio/vp/contact-vp-icon-brands.png"><br>Name Brands<br><br></li>
                           </ul>
-                        </div><!--end row-->
+                        </div>-->
+                        <!--end row-->
 
-                        <div class="row no-gutter">
-                          <p class="headline-spacing"><strong>Physical Address</strong><br>
-                    		1333 Howe Ave. Ste. 211<br>
-                    		Sacramento, CA 95825 USA<br>
-                            <span class="alert">Corporate headquarters only. Not a Showroom.</span></p>
+                        <!--<div class="row no-gutter">
+                          <p class="headline-spacing"><strong>Habite à</strong><br>
+                    		Rhode-Saint-Genèse<br>
+                    		Belgique<br>
+                            <span class="alert">Belgique</span></p>
                           </div>
 
                           <div style="clear: both;"></div>
 
-                    		</div><!--end row left-side-->
+                    		</div>--><!--end row left-side-->
                     </div><!--CLOSE wrapper-->
 
 
