@@ -74,41 +74,44 @@
                               </tbody>
                             </table>
                           </div><!--end row-->
+                            <div class="row no-gutter">
+                                <h5 class="col-lg-12 col-md-12 policy_title" id="top">Infortmations de contact <span class="jqueryToggle2"><img id="imgCat2" src="./img/flechetoggle.png" width="15" height="15"></h5><br><br>
+
+                                      <div class="contBorder2">
+
+                                        <p><strong>Contactez ce profil dès aujourd'hui !</strong><br>Vérifiez les horaires de contact du destinataire ci-dessous.</p>
+                                      <!--end row-->
+
+                                      <div class="row no-gutter">
+                                		   <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5 hero-box half">
+                                			<p>Téléphone<br>
+                                			<strong>0473/53.38.01</strong></p>
+                                		</div>
+
+                                       <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5 hero-box half">
+                                			<p>Email<br>
+                                			<strong><a class="small-link" href="mailto:jonathan.caron04@gmail.com">jonathan.caron04@gmail.com</a></strong></p>
+                                		</div>
+                                  </div><!-- end row-->
+
+                                  <div class="row no-gutter">
+                                      <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5 info-box">
+                                    <p><strong>Horaire de contact en semaine</strong><br>
+                                    Lundi - Mardi:<br>
+                                      <strong>18:00 a.m. à 22:00 p.m.</strong><br>
+                                    Mercredi - Vendredi:<br>
+                                      <strong>12:00 a.m. à 22:00 p.m.</strong></p></div><!--end div-->
+
+                                     <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5 info-box">
+                                    <p><strong>Horaire de contact le week-end</strong><br>
+                                    Samedi:<br>
+                                      <strong>10:00 a.m. à 22:00 p.m.</strong><br>
+                                    Dimanche:<br>
+                                      <strong>12:00 a.m. à 20:00 p.m.</strong></p></div><!--end div-->
+                                      </div><!--end row-->
+                                      <div style="clear: both;"></div>
+                                      </div>
                           <div class="row no-gutter">
-                    		 <h5 class="col-lg-12 col-md-12 policy_title" id="top">Infortmations de contact</h5><br><br>
-                            <p><strong>Contactez ce profil dès aujourd'hui !</strong><br>Vérifiez les horaires de contact du destinataire ci-dessous.</p>
-                          </div><!--end row-->
-
-                          <div class="row no-gutter">
-                    		   <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5 hero-box half">
-                    			<p>Téléphone<br>
-                    			<strong>0473/53.38.01</strong></p>
-                    		</div>
-
-                           <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5 hero-box half">
-                    			<p>Email<br>
-                    			<strong><a class="small-link" href="mailto:jonathan.caron04@gmail.com">jonathan.caron04@gmail.com</a></strong></p>
-                    		</div>
-                    </div><!-- end row-->
-
-                      <div class="row no-gutter">
-                          <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5 info-box">
-                        <p><strong>Horaire de contact en semaine</strong><br>
-                        Lundi - Mardi:<br>
-                          <strong>18:00 a.m. à 22:00 p.m.</strong><br>
-                        Mercredi - Vendredi:<br>
-                          <strong>12:00 a.m. à 22:00 p.m.</strong></p></div><!--end div-->
-
-                         <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5 info-box">
-                        <p><strong>Horaire de contact le week-end</strong><br>
-                        Samedi:<br>
-                          <strong>10:00 a.m. à 22:00 p.m.</strong><br>
-                        Dimanche:<br>
-                          <strong>12:00 a.m. à 20:00 p.m.</strong></p></div><!--end div-->
-                          </div><!--end row-->
-                          <div style="clear: both;"></div>
-
-                        <div class="row no-gutter">
                           <h5 class="policy_title"><strong>Here's why you should give us a call.</strong></h5>
 
                           <ul>
