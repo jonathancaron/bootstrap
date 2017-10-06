@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <?php include('./requires/header.php'); ?>
-
+    <link rel="stylesheet" type="text/css" href="css/inc/profil1.css">
   </head>
   <body>
     <?php include('./requires/dblog.php'); ?>
@@ -15,7 +15,7 @@
               <div class="feature-info">
                 <div class="fea">
                   <div class="col-sm-12 col-md-4">
-                      <h2>Profil - Utilisateur</h2>
+                      <h3>Fiche d'information</h3>
                        <img src="./img/mentor.jpg" class="img-rounded" width="220" height="200">
                       <p><span class="profilTitre">Jonathan Caron</span><br><span class="profilSousTitre">Développeur web</span></p>
                       <img src="./img/certifie.png" class="img-rounded"  width="50" height="50">
@@ -23,10 +23,99 @@
                   </div>
                 </div>
 
-                
+
+
+
+                <div class="row no-gutter">
+                        <br><br>
+                    		<div class="col-xs-12 col-sm-9  col-md-9 col-lg-8 policy_left_column ">
+
+
+                          <div class="row no-gutter">
+                    		 <h5 class="col-lg-12 col-md-9 col-sm-9 col-xs-8 policy_title" id="top">INFORMATIONS DE CONTACT</h5><br><br>
+                            <p><strong>Contactez ce profil dès aujourd'hui !</strong><br>We're here to make your purchase as easy as possible with no hassles.</p>
+                          </div><!--end row-->
+
+                          <div class="row no-gutter">
+                    		   <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5 hero-box half">
+                    			<p>Téléphone<br>
+                    			<strong>0473/53.38.01</strong></p>
+                    		</div>
+
+                           <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5 hero-box half">
+                    			<p>Email<br>
+                    			<strong><a class="small-link" href="mailto:sales@patioproductsusa.com">Sales@PatioProductsUSA.com</a></strong></p>
+                    		</div>
+                    </div><!-- end row-->
+
+                      <div class="row no-gutter">
+                          <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5 info-box">
+                        <p><strong>Sales Department Hours</strong><br>
+                        Monday - Friday:<br>
+                          <strong>6:00 a.m. to 5:00 p.m. PST</strong><br>
+                        Saturday &amp; Sunday:<br>
+                          <strong>6:00 a.m. to 3:00 p.m. PST</strong></p></div><!--end div-->
+
+                         <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5 info-box">
+                        <p><strong>Service/Returns Department Hours</strong><br>
+                        Monday - Friday:<br>
+                          <strong>6:00 a.m. to 5:00 p.m. PST</strong><br>
+                        Saturday &amp; Sunday:<br>
+                          <strong>Closed</strong></p></div><!--end div-->
+                          </div><!--end row-->
+                          <div style="clear: both;"></div>
+
+                        <div class="row no-gutter">
+                          <h5 class="policy_title"><strong>Here's why you should give us a call.</strong></h5>
+
+                          <ul>
+                            <li class="col-lg-5 col-md-5 col-sm-5 col-xs-5">
+                              <img src="http://images.patioproductsusa.com/site/common/patio/vp/contact-vp-icon-price-matching.png"><br>Price<br>Matching</li>
+
+                            <li class="col-lg-5 col-md-5 col-sm-5 col-xs-5">
+                              <img src="http://images.patioproductsusa.com/site/common/patio/vp/contact-vp-icon-estimates-consultations.png"><br>Free Estimates and<br>Consultations</li>
+
+                            <li class="col-lg-5 col-md-5 col-sm-5 col-xs-5">
+                              <img src="http://images.patioproductsusa.com/site/common/patio/vp/contact-vp-icon-trade-pricing.png"><br>Trade<br>Pricing</li>
+
+                            <li class="col-lg-5 col-md-5 col-sm-5 col-xs-5">
+                              <img src="http://images.patioproductsusa.com/site/common/patio/vp/contact-vp-icon-no-hassle-returns.png"><br>No Hassle<br>Returns</li>
+
+                            <li class="col-lg-5 col-md-5 col-sm-5 col-xs-5">
+                              <img src="http://images.patioproductsusa.com/site/common/patio/vp/contact-vp-icon-low-price-guarantee.png"><br>Low Price<br>Guarantees</li>
+
+                            <li class="col-lg-5 col-md-5 col-sm-5 col-xs-5">
+                              <img src="http://images.patioproductsusa.com/site/common/patio/vp/contact-vp-icon-lifetime-warranty.png"><br>Lifetime<br>Warranty</li>
+
+                            <li class="col-lg-5 col-md-5 col-sm-5 col-xs-5">
+                              <img src="http://images.patioproductsusa.com/site/common/patio/vp/contact-vp-icon-free-shipping.png"><br>Free Shipping on<br>Orders over $49</li>
+
+                            <li class="col-lg-5 col-md-5 col-sm-5 col-xs-5">
+                              <img src="http://images.patioproductsusa.com/site/common/patio/vp/contact-vp-icon-brands.png"><br>Name Brands<br><br></li>
+                          </ul>
+                        </div><!--end row-->
+
+                        <div class="row no-gutter">
+                          <p class="headline-spacing"><strong>Physical Address</strong><br>
+                    		1333 Howe Ave. Ste. 211<br>
+                    		Sacramento, CA 95825 USA<br>
+                            <span class="alert">Corporate headquarters only. Not a Showroom.</span></p>
+                          </div>
+
+                          <div style="clear: both;"></div>
+
+                    		</div><!--end row left-side-->
+                    </div><!--CLOSE wrapper-->
+
+
+
+
+
+
+
                 <div class="container col-md-8">
                   <h3 class="catBold">Mes messages <span class="jqueryToggle"><img id="imgCat" src="./img/flechetoggle.png" width="15" height="15"></h3></span>
-                  <table class="table table-bordered contBorder">
+                  <table class="table table-bordered contBorder" style="background-color: #f2efef; ">
                     <thead>
                       <tr>
                         <th>De</th>
