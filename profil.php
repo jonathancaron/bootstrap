@@ -33,7 +33,7 @@
 
                           <div class="row no-gutter">
                             <!--IF USER CONNECT AND USER ID = USER ID COOKIES -->
-                            <h5 class="policy_title"><strong>Mes messages <span class="jqueryToggle"><img id="imgCat" src="./img/flechetoggle.png" width="15" height="15"></strong></h5>
+                            <span class="jqueryToggle"><h5 class="policy_title"><strong>Mes messages <img id="imgCat" src="./img/flechetoggle.png" width="15" height="15"></strong></h5>
                             <table class="table contBorder">
                               <thead>
                                 <tr>
@@ -75,7 +75,7 @@
                             </table>
                           </div><!--end row-->
                             <div class="row no-gutter">
-                                <h5 class="col-lg-12 col-md-12 policy_title" id="top">Infortmations de contact <span class="jqueryToggle2"><img id="imgCat2" src="./img/flechetoggle.png" width="15" height="15"></h5><br><br>
+                                <span class="jqueryToggle2"><h5 class="col-lg-12 col-md-12 policy_title" id="top">Infortmations de contact <img id="imgCat2" src="./img/flechetoggle.png" width="15" height="15"></h5><br><br>
 
                                       <div class="contBorder2">
 
