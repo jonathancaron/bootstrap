@@ -33,7 +33,7 @@
 
                           <div class="row no-gutter">
                     		 <h5 class="col-lg-12 col-md-9 col-sm-9 col-xs-8 policy_title" id="top">INFORMATIONS DE CONTACT</h5><br><br>
-                            <p><strong>Contactez ce profil dès aujourd'hui !</strong><br>We're here to make your purchase as easy as possible with no hassles.</p>
+                            <p><strong>Contactez ce profil dès aujourd'hui !</strong><br>Vérifiez les disponibilités du destinataire ci-dessous.</p>
                           </div><!--end row-->
 
                           <div class="row no-gutter">
@@ -50,18 +50,18 @@
 
                       <div class="row no-gutter">
                           <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5 info-box">
-                        <p><strong>Sales Department Hours</strong><br>
-                        Monday - Friday:<br>
-                          <strong>6:00 a.m. to 5:00 p.m. PST</strong><br>
-                        Saturday &amp; Sunday:<br>
-                          <strong>6:00 a.m. to 3:00 p.m. PST</strong></p></div><!--end div-->
+                        <p><strong>Horaire de contact en semaine</strong><br>
+                        Lundi - Mardi:<br>
+                          <strong>18:00 a.m. à 22:00 p.m.</strong><br>
+                        Mercredi &amp; Vendredi:<br>
+                          <strong>12:00 a.m. à 22:00 p.m.</strong></p></div><!--end div-->
 
                          <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5 info-box">
-                        <p><strong>Service/Returns Department Hours</strong><br>
-                        Monday - Friday:<br>
-                          <strong>6:00 a.m. to 5:00 p.m. PST</strong><br>
-                        Saturday &amp; Sunday:<br>
-                          <strong>Closed</strong></p></div><!--end div-->
+                        <p><strong>Horaire de contact le week-end</strong><br>
+                        Samedi:<br>
+                          <strong>10:00 a.m. à 22:00 p.m.</strong><br>
+                        Dimanche:<br>
+                          <strong>12:00 a.m. à 20:00 p.m.</strong></p></div><!--end div-->
                           </div><!--end row-->
                           <div style="clear: both;"></div>
 
