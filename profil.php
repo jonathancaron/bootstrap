@@ -33,7 +33,7 @@
 
                           <div class="row no-gutter">
                     		 <h5 class="col-lg-12 col-md-9 col-sm-9 col-xs-8 policy_title" id="top">INFORMATIONS DE CONTACT</h5><br><br>
-                            <p><strong>Contactez ce profil dès aujourd'hui !</strong><br>Vérifiez les disponibilités du destinataire ci-dessous.</p>
+                            <p><strong>Contactez ce profil dès aujourd'hui !</strong><br>Vérifiez les horaires de contact du destinataire ci-dessous.</p>
                           </div><!--end row-->
 
                           <div class="row no-gutter">
@@ -44,7 +44,7 @@
 
                            <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5 hero-box half">
                     			<p>Email<br>
-                    			<strong><a class="small-link" href="mailto:sales@patioproductsusa.com">Sales@PatioProductsUSA.com</a></strong></p>
+                    			<strong><a class="small-link" href="mailto:jonathan.caron04@gmail.com">jonathan.caron04@gmail.com</a></strong></p>
                     		</div>
                     </div><!-- end row-->
 
