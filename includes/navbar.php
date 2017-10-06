@@ -1,5 +1,7 @@
 
 <link href="http://designers.hubspot.com/hs-fs/hub/327485/file-2054199286-css/font-awesome.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/inc/next.css">
+
 <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container">
     <div class="navbar-header">
@@ -76,42 +78,93 @@
 
 <!--Modal box REGISTER-->
 <div class="modal fade" id="register" role="dialog">
-  <div class="modal-dialog modal-sm">
+  <div class="modal-dialog modal-lg">
 
-    <!-- Modal content no 1-->
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title text-center form-title">Inscription</h4>
-      </div>
-      <div class="modal-body padtrbl">
+        <!-- Modal content no 1-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title text-center form-title">Inscription</h4>
+          </div>
+          <div class="modal-body padtrbl">
 
-        <div class="login-box-body">
-          <p class="login-box-msg">Une fois inscrit, vous pourrez modifier votre espace personnel et commencer à postuler pour des jobs étudiants et/ou des missions.</p>
-          <div class="form-group">
-            <form name="connexion" id="loginForm" action="profil.php" method="post">
-                         <div class="form-group has-feedback"> <!----- username -------------->
-                              <input class="form-control" placeholder="Email"  name="login" id="loginid" type="email" autocomplete="off" />
-                    <span style="display:none;font-weight:bold; position:absolute;color: red;position: absolute;padding:4px;font-size: 11px;background-color:rgba(128, 128, 128, 0.26);z-index: 17;  right: 27px; top: 5px;" id="span_loginid"></span><!---Alredy exists  ! -->
-                              <span class="glyphicon glyphicon-user form-control-feedback"></span>
-                          </div>
-                          <div class="form-group has-feedback"><!----- password -------------->
-                              <input class="form-control" placeholder="Mot de passe" name="password" id="loginpsw" type="password" autocomplete="off" />
-                    <span style="display:none;font-weight:bold; position:absolute;color: grey;position: absolute;padding:4px;font-size: 11px;background-color:rgba(128, 128, 128, 0.26);z-index: 17;  right: 27px; top: 5px;" id="span_loginpsw"></span><!---Alredy exists  ! -->
-                              <span class="glyphicon glyphicon-lock form-control-feedback"></span>
-                          </div>
-                          <div class="row">
+            <div class="login-box-body">
+              <p class="login-box-msg">Une fois inscrit, vous pourrez modifier votre espace personnel et commencer à postuler pour des jobs étudiants et/ou des missions.</p>
+              <div class="form-group">
+                <form name="connexion" id="loginForm" action="profil.php" method="post">
 
-                              <div class="col-xs-12">
-                                  <button type="submit" value="Submit" class="btn btn-green btn-block btn-flat" onclick="userlogin()">Valider</button>
+
+
+                             <div class="form-group has-feedback"> <!--- username -------------->
+                                  <input class="form-control" placeholder="Email"  name="login" id="loginid" type="email" autocomplete="off" />
+                        <span style="display:none;font-weight:bold; position:absolute;color: red;position: absolute;padding:4px;font-size: 11px;background-color:rgba(128, 128, 128, 0.26);z-index: 17;  right: 27px; top: 5px;" id="span_loginid"></span><!---Alredy exists  ! -->
+                                  <span class="fa fa-user-circle-o margincircle form-control-feedback"></span>
                               </div>
-                          </div>
-            </form>
+
+
+
+                              <div class="form-group has-feedback"><!--- password -------------->
+                                  <input class="form-control" placeholder="Mot de passe" name="password" id="loginpsw" type="password" autocomplete="off" />
+                        <span style="display:none;font-weight:bold; position:absolute;color: grey;position: absolute;padding:4px;font-size: 11px;background-color:rgba(128, 128, 128, 0.26);z-index: 17;  right: 27px; top: 5px;" id="span_loginpsw"></span><!---Alredy exists  ! -->
+                                  <span class="fa fa-key margincircle form-control-feedback"></span>
+                              </div>
+
+                              <div class="form-group has-feedback"><!--- repeat password -------------->
+                                  <input class="form-control" placeholder="Répéter le mot de passe" name="password" id="loginpsw" type="password" autocomplete="off" />
+                        <span style="display:none;font-weight:bold; position:absolute;color: grey;position: absolute;padding:4px;font-size: 11px;background-color:rgba(128, 128, 128, 0.26);z-index: 17;  right: 27px; top: 5px;" id="span_loginpsw"></span><!---Alredy exists  ! -->
+                                  <span class="fa fa-key margincircle form-control-feedback"></span>
+                              </div>
+
+    <hr class="bottom-line">
+    <div class="form-group has-feedback"><!--- Numéro de téléphone -------------->
+        <input class="form-control" placeholder="Entreprise (facultatif)" name="password" id="loginpsw" type="password" autocomplete="off" />
+    <span style="display:none;font-weight:bold; position:absolute;color: grey;position: absolute;padding:4px;font-size: 11px;background-color:rgba(128, 128, 128, 0.26);z-index: 17;  right: 27px; top: 5px;" id="span_loginpsw"></span><!---Alredy exists  ! -->
+        <span class="form-control-feedback"></span>
+    </div>
+
+    <div class="form-group has-feedback"><!--- prénom -------------->
+        <input class="form-control" placeholder="Votre prénom" name="password" id="loginpsw" type="password" autocomplete="off" />
+    <span style="display:none;font-weight:bold; position:absolute;color: grey;position: absolute;padding:4px;font-size: 11px;background-color:rgba(128, 128, 128, 0.26);z-index: 17;  right: 27px; top: 5px;" id="span_loginpsw"></span><!---Alredy exists  ! -->
+        <span class="form-control-feedback"></span>
+    </div>
+
+    <div class="form-group has-feedback"><!--- nom -------------->
+        <input class="form-control" placeholder="Votre nom" name="password" id="loginpsw" type="password" autocomplete="off" />
+    <span style="display:none;font-weight:bold; position:absolute;color: grey;position: absolute;padding:4px;font-size: 11px;background-color:rgba(128, 128, 128, 0.26);z-index: 17;  right: 27px; top: 5px;" id="span_loginpsw"></span><!---Alredy exists  ! -->
+        <span class="form-control-feedback"></span>
+    </div>
+
+
+                              <div class="form-group has-feedback"><!--- Numéro de téléphone -------------->
+                                  <input class="form-control" placeholder="Numéro de téléphone" name="password" id="loginpsw" type="password" autocomplete="off" />
+                        <span style="display:none;font-weight:bold; position:absolute;color: grey;position: absolute;padding:4px;font-size: 11px;background-color:rgba(128, 128, 128, 0.26);z-index: 17;  right: 27px; top: 5px;" id="span_loginpsw"></span><!---Alredy exists  ! -->
+                                  <span class="form-control-feedback"></span>
+                              </div>
+
+
+
+
+
+    <hr class="bottom-line">
+
+                            <div class="input-group"><!--- site internet -------------->
+                              <span class="input-group-addon" id="basic-addon1">http</span>
+                              <input type="text" class="form-control" placeholder="Votre site web" aria-describedby="basic-addon1">
+                            </div>
+                            <br>
+                              <div class="row">
+
+                                  <div class="col-xs-12">
+                                      <button type="submit" value="Submit" class="btn btn-green btn-block btn-flat" onclick="userlogin()">Valider</button>
+                                  </div>
+                              </div>
+                </form>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
 
   </div>
 </div>
 <!--/ Modal box-->
+<script src="js/inc/next.js"></script>
