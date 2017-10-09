@@ -64,7 +64,7 @@
                   <input class="form-control" placeholder="Numéro d'entreprise" name="entNum" type="text" />
                   <input class="form-control" placeholder="Numéro de TVA" name="entTVA" type="text" />
                   <input class="form-control" placeholder="Une adresse mail de votre entreprise (ex: admin@api-job.be) ou numéro de téléphone où nous pourrons vous joindre" name="entTVA" type="text" />
-                  <button type="submit" value="Submit" class="btn btn-green btn-block btn-flat" onclick="userlogin()">Valider</button>
+                  <br><button type="submit" value="Submit" class="btn btn-green btn-block btn-flat" onclick="userlogin()">Valider</button>
                 </form>
                 <br><br><br>
                 <?php }
