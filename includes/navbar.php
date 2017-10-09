@@ -22,11 +22,6 @@ $contenu_fichier_json = file_get_contents('./json/'.$lang.'.json');
 $tr = json_decode($contenu_fichier_json, true);
 ?>
 
-<?php
-
-
-
- ?>
 
 <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container">
@@ -50,7 +45,7 @@ $tr = json_decode($contenu_fichier_json, true);
       <?php
       if($_SESSION['id'] !=0)
       {
-        echo"okok";
+        echo $_SESSION['pseudo'];
 
       }
       ?>

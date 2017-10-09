@@ -30,11 +30,7 @@
         <div class="row">
           <div class="header-section text-center">
             <h2>Features</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem nesciunt vitae,<br> maiores, magni dolorum aliquam.   <?php if($_SESSION['id'] !=0)
-              {
-                echo"okok";
-
-              } ?></p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem nesciunt vitae,<br> maiores, magni dolorum aliquam.</p>
             <hr class="bottom-line">
           </div>
           <div class="feature-info">
