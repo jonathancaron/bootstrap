@@ -1,4 +1,3 @@
-<?php //include('./assets/requires/dblog.php'); ?>
 <link href="http://designers.hubspot.com/hs-fs/hub/327485/file-2054199286-css/font-awesome.css" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="css/inc/next.css">
 
@@ -109,12 +108,12 @@ $tr = json_decode($contenu_fichier_json, true);
             <div class="login-box-body">
               <p class="login-box-msg"><?php echo $tr['reg1'] ?></p>
               <div class="form-group">
-                <form name="connexion" id="loginForm" action="profil.php" method="post">
+                <form name="connexion" id="loginForm" action="./reg1.php" method="post">
 
 
 
                              <div class="form-group has-feedback"> <!--- username -------------->
-                                  <input class="form-control" placeholder="Email"  name="login" id="loginid" type="email" autocomplete="off" required />
+                                  <input class="form-control" placeholder="Email"  name="email" id="loginid" type="email" autocomplete="off" required maxlength="31" />
                         <span style="display:none;font-weight:bold; position:absolute;color: red;position: absolute;padding:4px;font-size: 11px;background-color:rgba(128, 128, 128, 0.26);z-index: 17;  right: 27px; top: 5px;" id="span_loginid"></span><!---Alredy exists  ! -->
                                   <span class="fa fa-user-circle-o margincircle form-control-feedback"></span>
                               </div>
@@ -122,39 +121,39 @@ $tr = json_decode($contenu_fichier_json, true);
 
 
                               <div class="form-group has-feedback"><!--- password -------------->
-                                  <input class="form-control" placeholder="Mot de passe" name="password" id="loginpsw" type="password" autocomplete="off" required />
+                                  <input class="form-control" placeholder="Mot de passe" name="password" id="loginpsw" type="password" autocomplete="off" required maxlength="29" />
                         <span style="display:none;font-weight:bold; position:absolute;color: grey;position: absolute;padding:4px;font-size: 11px;background-color:rgba(128, 128, 128, 0.26);z-index: 17;  right: 27px; top: 5px;" id="span_loginpsw"></span><!---Alredy exists  ! -->
                                   <span class="fa fa-key margincircle form-control-feedback"></span>
                               </div>
 
                               <div class="form-group has-feedback"><!--- repeat password -------------->
-                                  <input class="form-control" placeholder="Répéter le mot de passe" name="password" id="loginpsw" type="password" autocomplete="off" />
+                                  <input class="form-control" placeholder="Répéter le mot de passe" name="repassword" id="loginpsw" type="password" autocomplete="off" maxlength="29" />
                         <span style="display:none;font-weight:bold; position:absolute;color: grey;position: absolute;padding:4px;font-size: 11px;background-color:rgba(128, 128, 128, 0.26);z-index: 17;  right: 27px; top: 5px;" id="span_loginpsw"></span><!---Alredy exists  ! -->
                                   <span class="fa fa-key margincircle form-control-feedback"></span>
                               </div>
 
     <hr class="bottom-line">
     <div class="form-group has-feedback"><!--- entreprise -------------->
-        <input class="form-control" placeholder="Dénomination entreprise (facultatif)" name="password" id="loginpsw" type="text" autocomplete="off" />
+        <input class="form-control" placeholder="Dénomination entreprise (facultatif)" name="entreprise" id="loginpsw" type="text" autocomplete="off" maxlength="39" />
     <span style="display:none;font-weight:bold; position:absolute;color: grey;position: absolute;padding:4px;font-size: 11px;background-color:rgba(128, 128, 128, 0.26);z-index: 17;  right: 27px; top: 5px;" id="span_loginpsw"></span><!---Alredy exists  ! -->
         <span class="form-control-feedback"></span>
     </div>
 
     <div class="form-group has-feedback"><!--- prénom -------------->
-        <input class="form-control" placeholder="Votre prénom" name="password" id="loginpsw" type="text" autocomplete="off" required />
+        <input class="form-control" placeholder="Votre prénom" name="prenom" id="loginpsw" type="text" autocomplete="off" required maxlength="19" />
     <span style="display:none;font-weight:bold; position:absolute;color: grey;position: absolute;padding:4px;font-size: 11px;background-color:rgba(128, 128, 128, 0.26);z-index: 17;  right: 27px; top: 5px;" id="span_loginpsw"></span><!---Alredy exists  ! -->
         <span class="form-control-feedback"></span>
     </div>
 
     <div class="form-group has-feedback"><!--- nom -------------->
-        <input class="form-control" placeholder="Votre nom" name="password" id="loginpsw" type="text" autocomplete="off" required />
+        <input class="form-control" placeholder="Votre nom" name="nom" id="loginpsw" type="text" autocomplete="off" required maxlength="19" />
     <span style="display:none;font-weight:bold; position:absolute;color: grey;position: absolute;padding:4px;font-size: 11px;background-color:rgba(128, 128, 128, 0.26);z-index: 17;  right: 27px; top: 5px;" id="span_loginpsw"></span><!---Alredy exists  ! -->
         <span class="form-control-feedback"></span>
     </div>
 
 
                               <div class="form-group has-feedback"><!--- Numéro de téléphone -------------->
-                                  <input class="form-control" placeholder="Numéro de téléphone" name="password" id="loginpsw" type="text" autocomplete="off" required />
+                                  <input class="form-control" placeholder="Numéro de téléphone" name="num" id="loginpsw" type="text" autocomplete="off" required maxlength="25" />
                         <span style="display:none;font-weight:bold; position:absolute;color: grey;position: absolute;padding:4px;font-size: 11px;background-color:rgba(128, 128, 128, 0.26);z-index: 17;  right: 27px; top: 5px;" id="span_loginpsw"></span><!---Alredy exists  ! -->
                                   <span class="form-control-feedback"></span>
                               </div>
@@ -167,7 +166,7 @@ $tr = json_decode($contenu_fichier_json, true);
 
                             <div class="input-group"><!--- site internet -------------->
                               <span class="input-group-addon" id="basic-addon1">http</span>
-                              <input type="text" class="form-control" placeholder="Votre site web (facultatif)" aria-describedby="basic-addon1">
+                              <input name="http" type="text" class="form-control" placeholder="Votre site web (facultatif)" maxlength="39" aria-describedby="basic-addon1">
                             </div>
                             <br>
                               <div class="row">

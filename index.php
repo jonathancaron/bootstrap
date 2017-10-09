@@ -4,7 +4,7 @@
     <?php include('./requires/header.php'); ?>
   </head>
   <body>
-    <?php //include('./requires/dblog.php'); ?>
+    <?php  include('./requires/dblog.php'); ?>
     <?php  include('./includes/navbar.php'); ?>
 
     <!--Banner-->

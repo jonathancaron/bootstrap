@@ -5,7 +5,7 @@
     <link rel="stylesheet" type="text/css" href="css/inc/profil1.css">
   </head>
   <body>
-    <?php //include('./requires/dblog.php'); ?>
+    <?php include('./requires/dblog.php'); ?>
     <?php  include('./includes/navbar.php'); ?>
     <!--Profil utilisateur-->
 
