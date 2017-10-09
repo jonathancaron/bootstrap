@@ -22,5 +22,12 @@
     "prof8":"Téléphone",
     "prof9":"Email",
     "prof10":"Horaire de contact en semaine",
-    "prof11":"Horaire de contact le week-end"
+    "prof11":"Horaire de contact le week-end",
+    "categorie_log1":"Menu 1",
+      "categorie_log2":"Menu 2",
+        "categorie_log3":"Menu 3",
+          "categorie_log4":"Menu 4",
+            "categorie_log5":"Menu 5",
+              "categorie_log6":"Deconnexion",
+                "categorie_log7":"Profil"
 }

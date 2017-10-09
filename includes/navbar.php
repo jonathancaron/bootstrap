@@ -35,20 +35,31 @@ $tr = json_decode($contenu_fichier_json, true);
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
     <ul class="nav navbar-nav navbar-right">
-      <li><a href="#feature"><?php echo $tr['categorie_1'] ?></a></li>
-      <li><a href="#organisations"><?php echo $tr['categorie_2'] ?></a></li>
-      <li><a href="#courses"><?php echo $tr['categorie_3'] ?></a></li>
-      <li><a href="#pricing"><?php echo $tr['categorie_4'] ?></a></li>
-      <li><a href="#" data-target="#login" data-toggle="modal"><?php echo $tr['categorie_log'] ?></a></li>
-      <li class="btn-trial"><a href="#" data-target="#register" data-toggle="modal"><?php echo $tr['categorie_reg'] ?></a></li>
-      <li><nav><a<?php echo $en_class ?> href="?lang=en">en</a> <a<?php echo $fr_class ?> href="?lang=fr">fr</a></nav></li>
       <?php
-      if($_SESSION['id'] !=0)
+      if($_SESSION['id'] ==0)
       {
-        echo $_SESSION['pseudo'];
-
+        ?>
+          <li><a href="#feature"><?php echo $tr['categorie_1'] ?></a></li>
+          <li><a href="#organisations"><?php echo $tr['categorie_2'] ?></a></li>
+          <li><a href="#courses"><?php echo $tr['categorie_3'] ?></a></li>
+          <li><a href="#pricing"><?php echo $tr['categorie_4'] ?></a></li>
+          <li><a href="#" data-target="#login" data-toggle="modal"><?php echo $tr['categorie_log'] ?></a></li>
+          <li class="btn-trial"><a href="#" data-target="#register" data-toggle="modal"><?php echo $tr['categorie_reg'] ?></a></li>
+        <?php
+      }
+      else {
+        ?>
+          <li><a href="#feature"><?php echo $tr['categorie_log1'] ?></a></li>
+          <li><a href="#organisations"><?php echo $tr['categorie_log2'] ?></a></li>
+          <li><a href="#courses"><?php echo $tr['categorie_log3'] ?></a></li>
+          <li><a href="#pricing"><?php echo $tr['categorie_log4'] ?></a></li>
+          <li><a href="#" data-target="#login" data-toggle="modal"><?php echo $tr['categorie_log6'] ?></a></li>
+          <li class="btn-trial"><a href="./profil.php" data-toggle="modal"><?php echo $tr['categorie_log7'] ?></a></li>
+        <?php
       }
       ?>
+          <li><nav><a<?php echo $en_class ?> href="?lang=en">en</a> <a<?php echo $fr_class ?> href="?lang=fr">fr</a></nav></li>
+
     </ul>
     </div>
   </div>
