@@ -95,10 +95,10 @@ $tr = json_decode($contenu_fichier_json, true);
 
 <!--Modal box REGISTER-->
 <div class="modal fade" id="register" role="dialog">
-  <div class="modal-dialog modal-lg">
+  <div class="modal-dialog modal-lg" style="margin-top:10px">
 
         <!-- Modal content no 1-->
-        <div class="modal-content">
+        <div class="modal-content col-xs-8 col-sm-12">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal">&times;</button>
             <h4 class="modal-title text-center form-title"><?php echo $tr['categorie_reg'] ?></h4>
@@ -151,6 +151,18 @@ $tr = json_decode($contenu_fichier_json, true);
         <span class="form-control-feedback"></span>
     </div>
 
+    <span style="display:none;font-weight:bold; position:absolute;color: grey;position: absolute;padding:4px;font-size: 11px;background-color:rgba(128, 128, 128, 0.26);z-index: 17;  right: 27px; top: 5px;" id="span_loginpsw"></span><!---Alredy exists  ! -->
+        <span class="form-control-feedback"></span>
+    </div>
+
+    <div class="form-group has-feedback"><!--- sexe -------------->
+      <select>
+    <option value="volvo">Sélectionnez votre sexe</option>
+    <option value="saab">Homme</option>
+    <option value="mercedes">Femme</option>
+    </select>
+
+    <hr class="bottom-line">
 
                               <div class="form-group has-feedback"><!--- Numéro de téléphone -------------->
                                   <input class="form-control" placeholder="Numéro de téléphone" name="num" id="loginpsw" type="text" autocomplete="off" required maxlength="25" />
@@ -159,10 +171,6 @@ $tr = json_decode($contenu_fichier_json, true);
                               </div>
 
 
-
-
-
-    <hr class="bottom-line">
 
                             <div class="input-group"><!--- site internet -------------->
                               <span class="input-group-addon" id="basic-addon1">http</span>

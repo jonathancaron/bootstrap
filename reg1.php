@@ -12,7 +12,7 @@
     if(!empty($_POST["email"])){
         $step  = 0;
     }
-    if($step == 0)
+    if($step == 0 && !empty($_POST))
     {
       $pEmail= $_POST["email"];
       $pPassword= $_POST["password"];
@@ -27,7 +27,7 @@
       $pNum= $_POST["num"];
       $pHttp= $_POST["http"];
       try{
-        $bdd->exec("INSERT INTO users (email, mdp, denomination, status, prenom, nom, numtel, siteweb) VALUES ('$pEmail', '$pPassword', '$pEntreprise', '$pStatus', '$pPrenom', '$pNom', '$pNum', '$pHttp')");
+        $bdd->exec("INSERT INTO users (email, mdp, denomination, status, prenom, nom, sexe, numtel, siteweb) VALUES ('$pEmail', '$pPassword', '$pEntreprise', '$pStatus', '$pPrenom', '$pNom', '$pSexe', '$pNum', '$pHttp')");
       }
       catch (Exception $e) {
         die('Erreur : ' . $e->getMessage());
