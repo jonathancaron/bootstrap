@@ -6,7 +6,7 @@
   <body>
     <?php  include('./requires/dblog.php'); ?>
     <?php  include('./includes/navbar.php'); ?>
-
+    <?php session_start(); ?>
     <!--Banner-->
     <div class="banner">
       <div class="bg-color">
@@ -15,6 +15,7 @@
             <div class="banner-text text-center">
               <div class="text-border">
                 <h2 class="text-dec">Trust & Quality</h2>
+
               </div>
 
             </div>
@@ -29,7 +30,11 @@
         <div class="row">
           <div class="header-section text-center">
             <h2>Features</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem nesciunt vitae,<br> maiores, magni dolorum aliquam.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem nesciunt vitae,<br> maiores, magni dolorum aliquam.   <?php if($_SESSION['id'] !=0)
+              {
+                echo"okok";
+
+              } ?></p>
             <hr class="bottom-line">
           </div>
           <div class="feature-info">

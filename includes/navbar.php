@@ -1,6 +1,11 @@
 <link href="http://designers.hubspot.com/hs-fs/hub/327485/file-2054199286-css/font-awesome.css" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="css/inc/next.css">
-<?php session_start(); ?>
+<?php
+
+include('./requires/dblog.php');
+session_start();
+
+?>
 
 <?php
 $lang = $fr_class = $en_class = '';
@@ -17,6 +22,11 @@ $contenu_fichier_json = file_get_contents('./json/'.$lang.'.json');
 $tr = json_decode($contenu_fichier_json, true);
 ?>
 
+<?php
+
+
+
+ ?>
 
 <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container">
@@ -37,6 +47,13 @@ $tr = json_decode($contenu_fichier_json, true);
       <li><a href="#" data-target="#login" data-toggle="modal"><?php echo $tr['categorie_log'] ?></a></li>
       <li class="btn-trial"><a href="#" data-target="#register" data-toggle="modal"><?php echo $tr['categorie_reg'] ?></a></li>
       <li><nav><a<?php echo $en_class ?> href="?lang=en">en</a> <a<?php echo $fr_class ?> href="?lang=fr">fr</a></nav></li>
+      <?php
+      if($_SESSION['id'] !=0)
+      {
+        echo"okok";
+
+      }
+      ?>
     </ul>
     </div>
   </div>
