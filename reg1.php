@@ -23,7 +23,16 @@
       }
       $pPrenom= $_POST["prenom"];
       $pNom= $_POST["nom"];
-      $pSexe= 0;
+
+
+
+      $pSexe= $_POST["sexeid"];
+      if($pSexe==2){
+        $pSexe=0;
+      }
+      echo "t $pSexe";
+
+      
       $pNum= $_POST["num"];
       $pHttp= $_POST["http"];
       try{

@@ -1,6 +1,6 @@
 <link href="http://designers.hubspot.com/hs-fs/hub/327485/file-2054199286-css/font-awesome.css" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="css/inc/next.css">
-
+<?php session_start(); ?>
 
 <?php
 $lang = $fr_class = $en_class = '';
@@ -57,9 +57,9 @@ $tr = json_decode($contenu_fichier_json, true);
         <div class="login-box-body">
           <p class="login-box-msg"><?php echo $tr['log1'] ?></p>
           <div class="form-group">
-            <form name="connexion" id="loginForm" action="profil.php" method="post">
+            <form name="connexion" id="loginForm" action="log1.php" method="post">
                          <div class="form-group has-feedback"> <!----- username -------------->
-                              <input class="form-control" placeholder="Identifiant"  name="login" id="loginid" type="text" autocomplete="off" />
+                              <input class="form-control" placeholder="Email"  name="pseudo" id="loginid" type="text" autocomplete="off" />
                     <span style="display:none;font-weight:bold; position:absolute;color: red;position: absolute;padding:4px;font-size: 11px;background-color:rgba(128, 128, 128, 0.26);z-index: 17;  right: 27px; top: 5px;" id="span_loginid"></span><!---Alredy exists  ! -->
                               <span class="fa fa-user-circle-o margincircle  form-control-feedback"></span>
                           </div>
@@ -156,10 +156,10 @@ $tr = json_decode($contenu_fichier_json, true);
     </div>
 
     <div class="form-group has-feedback"><!--- sexe -------------->
-      <select>
-    <option value="volvo">Sélectionnez votre sexe</option>
-    <option value="saab">Homme</option>
-    <option value="mercedes">Femme</option>
+      <select name="sexeid">
+    <option selected="selected" value="2">Sélectionnez votre sexe</option>
+    <option value="0">Homme</option>
+    <option value="1">Femme</option>
     </select>
 
     <hr class="bottom-line">
