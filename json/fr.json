@@ -1,0 +1,26 @@
+{
+  "titre_1":"Men",
+    "titre_2":"Tor",
+  "categorie_1":"Menu 1",
+    "categorie_2":"Menu 2",
+      "categorie_3":"Menu 3",
+        "categorie_4":"Menu 4",
+          "categorie_5":"Menu 5",
+            "categorie_log":"Connexion",
+              "categorie_reg":"Inscription",
+    "log1":"Connexion au panel utilisateur",
+    "reg1":"Une fois inscrit, vous pourrez modifier votre espace personnel et commencer à postuler pour des jobs étudiants et/ou des missions.",
+
+    "prof1":"Fiche d'information",
+    "prof2":"Mes messages",
+    "prof3":"De",
+    "prof4":"Titre",
+    "prof5":"Message",
+
+    "prof6":"Infortmations de contact ",
+    "prof7":"<strong>Contactez ce profil dès aujourd'hui !</strong><br>Vérifiez les horaires de contact du destinataire ci-dessous.",
+    "prof8":"Téléphone",
+    "prof9":"Email",
+    "prof10":"Horaire de contact en semaine",
+    "prof11":"Horaire de contact le week-end"
+}

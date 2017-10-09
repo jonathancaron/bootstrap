@@ -5,7 +5,7 @@
     <link rel="stylesheet" type="text/css" href="css/inc/profil1.css">
   </head>
   <body>
-    <?php include('./requires/dblog.php'); ?>
+    <?php //include('./requires/dblog.php'); ?>
     <?php  include('./includes/navbar.php'); ?>
     <!--Profil utilisateur-->
 
@@ -15,7 +15,7 @@
               <div class="feature-info">
                 <div class="fea">
                   <div class="col-sm-12 col-md-4">
-                      <h3>Fiche d'information</h3>
+                      <h3><?php echo $tr['prof1'] ?></h3>
                        <img src="./img/mentor.jpg" class="img-rounded" width="220" height="200">
                       <p><span class="profilTitre">Jonathan Caron</span><br><span class="profilSousTitre">Développeur web</span></p>
                       <img src="./img/certifie.png" class="img-rounded"  width="50" height="50">
@@ -33,13 +33,13 @@
 
                           <div class="row no-gutter">
                             <!--IF USER CONNECT AND USER ID = USER ID COOKIES -->
-                            <span class="jqueryToggle"><h5 class="policy_title"><strong>Mes messages <img id="imgCat" src="./img/flechetoggle.png" width="15" height="15"></strong></h5>
+                            <span class="jqueryToggle"><h5 class="policy_title"><strong><?php echo $tr['prof2'] ?> <img id="imgCat" src="./img/flechetoggle.png" width="15" height="15"></strong></h5>
                             <table class="table contBorder">
                               <thead>
                                 <tr>
-                                  <th>De</th>
-                                  <th>Titre</th>
-                                  <th>Message</th>
+                                  <th><?php echo $tr['prof3'] ?></th>
+                                  <th><?php echo $tr['prof4'] ?></th>
+                                  <th><?php echo $tr['prof5'] ?></th>
                                 </tr>
                               </thead>
                               <tbody>
@@ -75,35 +75,35 @@
                             </table>
                           </div><!--end row-->
                             <div class="row no-gutter">
-                                <span class="jqueryToggle2"><h5 class="col-lg-12 col-md-12 policy_title" id="top">Infortmations de contact <img id="imgCat2" src="./img/flechetoggle.png" width="15" height="15"></h5><br><br>
+                                <span class="jqueryToggle2"><h5 class="col-lg-12 col-md-12 policy_title" id="top"><?php echo $tr['prof6'] ?><img id="imgCat2" src="./img/flechetoggle.png" width="15" height="15"></h5><br><br>
 
                                       <div class="contBorder2">
 
-                                        <p><strong>Contactez ce profil dès aujourd'hui !</strong><br>Vérifiez les horaires de contact du destinataire ci-dessous.</p>
+                                        <p><?php echo $tr['prof7'] ?></p>
                                       <!--end row-->
 
                                       <div class="row no-gutter">
                                 		   <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5 hero-box half">
-                                			<p>Téléphone<br>
+                                			<p><?php echo $tr['prof8'] ?><br>
                                 			<strong>0473/53.38.01</strong></p>
                                 		</div>
 
                                        <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5 hero-box half">
-                                			<p>Email<br>
+                                			<p><?php echo $tr['prof9'] ?><br>
                                 			<strong><a class="small-link" href="mailto:jonathan.caron04@gmail.com">jonathan.caron04@gmail.com</a></strong></p>
                                 		</div>
                                   </div><!-- end row-->
 
                                   <div class="row no-gutter">
                                       <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5 info-box">
-                                    <p><strong>Horaire de contact en semaine</strong><br>
+                                    <p><strong><?php echo $tr['prof10'] ?></strong><br>
                                     Lundi - Mardi:<br>
                                       <strong>18:00 a.m. à 22:00 p.m.</strong><br>
                                     Mercredi - Vendredi:<br>
                                       <strong>12:00 a.m. à 22:00 p.m.</strong></p></div><!--end div-->
 
                                      <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5 info-box">
-                                    <p><strong>Horaire de contact le week-end</strong><br>
+                                    <p><strong><?php echo $tr['prof11'] ?></strong><br>
                                     Samedi:<br>
                                       <strong>10:00 a.m. à 22:00 p.m.</strong><br>
                                     Dimanche:<br>

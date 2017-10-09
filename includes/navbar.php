@@ -1,4 +1,4 @@
-<?php include('./assets/requires/dblog.php'); ?>
+<?php //include('./assets/requires/dblog.php'); ?>
 <link href="http://designers.hubspot.com/hs-fs/hub/327485/file-2054199286-css/font-awesome.css" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="css/inc/next.css">
 
@@ -6,14 +6,14 @@
 <?php
 $lang = $fr_class = $en_class = '';
 /* Récupération de la langue dans la chaîne get */
-$lang = (isset($_GET['lang']) && file_exists('lang/'.$_GET['lang'].'.json')) ? $_GET['lang'] : 'fr';
+$lang = (isset($_GET['lang']) && file_exists('./json/'.$_GET['lang'].'.json')) ? $_GET['lang'] : 'fr';
 /* Définition de la class pour les liens de langue */
-if ($lang == 'inscription')
+if ($lang == 'fr')
     $fr_class = ' class="active"';
 else
     $en_class = ' class="active"';
 /* Récupération du contenu du fichier .json */
-$contenu_fichier_json = file_get_contents('lang/'.$lang.'.json');
+$contenu_fichier_json = file_get_contents('./json/'.$lang.'.json');
 /* Les données sont récupérées sous forme de tableau (true) */
 $tr = json_decode($contenu_fichier_json, true);
 ?>
@@ -27,16 +27,17 @@ $tr = json_decode($contenu_fichier_json, true);
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
     </button>
-    <a class="navbar-brand" href="index.php">Men<span>tor</span></a>
+    <a class="navbar-brand" href="index.php"><?php echo $tr['titre_1'] ?><span><?php echo $tr['titre_2'] ?></span></a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
     <ul class="nav navbar-nav navbar-right">
-      <li><a href="#feature">Features</a></li>
-      <li><a href="#organisations">Organisations</a></li>
-      <li><a href="#courses">Courses</a></li>
-      <li><a href="#pricing">Pricing</a></li>
-      <li><a href="#" data-target="#login" data-toggle="modal">Connexion</a></li>
-      <li class="btn-trial"><a href="#" data-target="#register" data-toggle="modal">Inscription</a></li>
+      <li><a href="#feature"><?php echo $tr['categorie_1'] ?></a></li>
+      <li><a href="#organisations"><?php echo $tr['categorie_2'] ?></a></li>
+      <li><a href="#courses"><?php echo $tr['categorie_3'] ?></a></li>
+      <li><a href="#pricing"><?php echo $tr['categorie_4'] ?></a></li>
+      <li><a href="#" data-target="#login" data-toggle="modal"><?php echo $tr['categorie_log'] ?></a></li>
+      <li class="btn-trial"><a href="#" data-target="#register" data-toggle="modal"><?php echo $tr['categorie_reg'] ?></a></li>
+      <li><nav><a<?php echo $en_class ?> href="?lang=en">en</a> <a<?php echo $fr_class ?> href="?lang=fr">fr</a></nav></li>
     </ul>
     </div>
   </div>
@@ -50,12 +51,12 @@ $tr = json_decode($contenu_fichier_json, true);
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title text-center form-title">Connexion</h4>
+        <h4 class="modal-title text-center form-title"><?php echo $tr['categorie_log'] ?></h4>
       </div>
       <div class="modal-body padtrbl">
 
         <div class="login-box-body">
-          <p class="login-box-msg">Connexion au panel utilisateur</p>
+          <p class="login-box-msg"><?php echo $tr['log1'] ?></p>
           <div class="form-group">
             <form name="connexion" id="loginForm" action="profil.php" method="post">
                          <div class="form-group has-feedback"> <!----- username -------------->
@@ -101,12 +102,12 @@ $tr = json_decode($contenu_fichier_json, true);
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal">&times;</button>
-            <h4 class="modal-title text-center form-title">Inscription</h4>
+            <h4 class="modal-title text-center form-title"><?php echo $tr['categorie_reg'] ?></h4>
           </div>
           <div class="modal-body padtrbl">
 
             <div class="login-box-body">
-              <p class="login-box-msg">Une fois inscrit, vous pourrez modifier votre espace personnel et commencer à postuler pour des jobs étudiants et/ou des missions.</p>
+              <p class="login-box-msg"><?php echo $tr['reg1'] ?></p>
               <div class="form-group">
                 <form name="connexion" id="loginForm" action="profil.php" method="post">
 
@@ -179,7 +180,7 @@ $tr = json_decode($contenu_fichier_json, true);
               </div>
             </div>
           </div>
-          
+
 
 
         </div>
