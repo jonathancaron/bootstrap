@@ -1,10 +1,13 @@
 
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
+  <?php include('./requires/header.php'); ?>
 
-  </head>
-  <body>
+</head>
+<body>
+  <?php include('./requires/dblog.php'); ?>
+  <?php  include('./includes/navbar.php'); ?>
 
 
     <?php
@@ -19,7 +22,7 @@
         {
             $message = '<p>une erreur s\'est produite pendant votre identification.
     	Vous devez remplir tous les champs</p>
-    	<p>Cliquez <a href="./connexion.php">ici</a> pour revenir</p>';
+    	<p>Veuillez s\'il vous plait réessayer.</p>';
         }
         else //On check le mot de passe
         {
@@ -41,30 +44,56 @@
                 $_SESSION['sexe'] = $data['sexe'];
                 $_SESSION['numtel'] = $data['numtel'];
                 $_SESSION['siteweb'] = $data['siteweb'];
-          	    $message = '<p>Bienvenue '.$data['email'].',
-          			vous êtes maintenant connecté!</p>
-          			<p>Cliquez <a href="./index.php">ici</a>
-          			pour revenir à la page d accueil</p>';
+          	    $message = '';
+                header('Location: ./index.php');
 
 
           	}
           	else // Acces pas OK !
           	{
           	    $message = '<p>Une erreur s\'est produite
-          	    pendant votre identification.<br /> Le mot de passe ou le pseudo
-                      entré n\'est pas correcte.</p><p>Cliquez <a href="./connexion.php">ici</a>
-          	    pour revenir à la page précédente
-          	    <br /><br />Cliquez <a href="./index.php">ici</a>
-          	    pour revenir à la page d accueil</p>';
+          	    pendant votre identification.<br />Veuillez s\'il vous plait réessayer.</p>';
 
           	}
         $query->CloseCursor();
         }
-        echo $message;
 
     ?>
 
 
 
+    <section id ="feature" class="section-padding">
+
+      <div class="container">
+          <div class="feature-info">
+            <div class="fea">
+              <div class="col-sm-12 col-md-12 text-center">
+                <br>
+                <img src="./img/error.png" alt="erreur" width="100px" height="100px"><br>
+                <br>
+                <?php echo $message; ?>
+                <br>
+
+              </div>
+            </div>
+        </div>
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--Profil entreprise-->
+    <?php  include('./includes/footer.php'); ?>
+    <?php  include('./requires/jscss.php'); ?>
   </body>
 </html>

@@ -8,7 +8,10 @@
     <?php include('./requires/dblog.php'); ?>
     <?php  include('./includes/navbar.php'); ?>
     <!--Profil utilisateur-->
-
+    <?php
+    if($_SESSION['id'] ==0)
+      { echo "<script type='text/javascript'> document.location = 'index.php'; </script>"; }
+    ?>
         <section id ="feature" class="section-padding">
 
           <div class="container">
