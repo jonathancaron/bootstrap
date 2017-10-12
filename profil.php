@@ -28,7 +28,10 @@
         $usersexe = $data['sexe'];
         $usernumtel = $data['numtel'];
         $usersiteweb = $data['siteweb'];
+        $query->CloseCursor();
 
+        error_reporting(E_ALL);
+        ini_set('display_errors', 1);
       ?>
 
         <section id ="feature" class="section-padding">
@@ -65,34 +68,48 @@
                                     </tr>
                                   </thead>
                                   <tbody>
-                                    <tr>
-                                      <td>
-                                        <?php
-                                        $str="Proximus Recrutement";
-                                        if (strlen($str) > 20)
-                                        $str = substr($str, 0, 17) . '...';
-                                        echo $str; ?>
-                                      </td>
-                                      <td>
-                                        <?php
-                                        $str="Employé gestion bureautique à temps plein";
-                                        if (strlen($str) > 20)
-                                        $str = substr($str, 0, 17) . '...';
-                                        echo $str; ?>
-                                      </td>
-                                      <td>
-                                        <?php
-                                        $str="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et placerat dui. In posuere metus et elit placerat tristique. Maecenas eu est in sem ullamcorper tincidunt.";
-                                        if (strlen($str) > 40)
-                                        $str = substr($str, 0, 37) . '...';
-                                        echo $str; ?>
-                                      </td>
-                                    </tr>
-                                    <tr>
-                                      <td>BeCode</td>
-                                      <td>Recrutement formateur</td>
-                                      <td>Bonjour Jonathan, Nous vous contact...</td>
-                                    </tr>
+                                    <?php
+
+
+                                    $sth=$bdd->prepare('SELECT id, de, pour, titre, message FROM msgprive');
+                                    $sth->execute();
+
+
+                                    $sth->rowCount();
+
+                                         while($row = $sth->fetch(PDO::FETCH_ASSOC)){
+                                           if($row['pour'] == $_SESSION['id']){ ?>
+                                             <tr>
+                                               <td>
+                                                 <?php $str=$row['de'];
+                                                 if (strlen($str) > 20)
+                                                 $str = substr($str, 0, 17) . '...';
+                                                 echo $str;
+                                                 ?>
+
+                                               </td>
+                                                 <td>
+                                                   <?php $str=$row['titre'];
+                                                   if (strlen($str) > 20)
+                                                   $str = substr($str, 0, 17) . '...';
+                                                   echo $str;
+                                                 ?>
+                                                </td>
+                                               <td>
+                                                 <?php
+                                                 $str=$row['message'];
+                                                 if (strlen($str) > 40)
+                                                 $str = substr($str, 0, 37) . '...';
+                                                 echo $str;
+                                                 ?>
+                                               </td>
+                                             </tr>
+                                           <?php
+                                            }
+                                          }
+
+                                        ?>
+
                                   </tbody>
                                 </table>
                               </div><!--end row-->
