@@ -79,6 +79,7 @@
 
                                          while($row = $sth->fetch(PDO::FETCH_ASSOC)){
                                            if($row['pour'] == $_SESSION['id']){ ?>
+                                             <?php $id=$row['id']; ?>
                                              <tr>
                                                <td>
 
@@ -109,8 +110,10 @@
                                                  $str=$row['message'];
                                                  if (strlen($str) > 40)
                                                  $str = substr($str, 0, 37) . '...';
-                                                 echo $str;
+                                                 echo "<a href='./message.php?id=$id'>$str</a>";
+
                                                  ?>
+
                                                </td>
                                              </tr>
                                            <?php
