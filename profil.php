@@ -46,56 +46,56 @@
                 </div>
 
 
-
-
                   <div class="row no-gutter">
                         <br><br>
 
                     		<div class="col-xs-12 col-sm-9  col-md-9 col-lg-8 policy_left_column ">
-
-                          <div class="row no-gutter">
-                            <!--IF USER CONNECT AND USER ID = USER ID COOKIES -->
-                            <span class="jqueryToggle"><h5 class="policy_title"><strong><?php echo $tr['prof2'] ?> <img id="imgCat" src="./img/flechetoggle.png" width="15" height="15"></strong></h5>
-                            <table class="table contBorder">
-                              <thead>
-                                <tr>
-                                  <th><?php echo $tr['prof3'] ?></th>
-                                  <th><?php echo $tr['prof4'] ?></th>
-                                  <th><?php echo $tr['prof5'] ?></th>
-                                </tr>
-                              </thead>
-                              <tbody>
-                                <tr>
-                                  <td>
-                                    <?php
-                                    $str="Proximus Recrutement";
-                                    if (strlen($str) > 20)
-                                    $str = substr($str, 0, 17) . '...';
-                                    echo $str; ?>
-                                  </td>
-                                  <td>
-                                    <?php
-                                    $str="Employé gestion bureautique à temps plein";
-                                    if (strlen($str) > 20)
-                                    $str = substr($str, 0, 17) . '...';
-                                    echo $str; ?>
-                                  </td>
-                                  <td>
-                                    <?php
-                                    $str="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et placerat dui. In posuere metus et elit placerat tristique. Maecenas eu est in sem ullamcorper tincidunt.";
-                                    if (strlen($str) > 40)
-                                    $str = substr($str, 0, 37) . '...';
-                                    echo $str; ?>
-                                  </td>
-                                </tr>
-                                <tr>
-                                  <td>BeCode</td>
-                                  <td>Recrutement formateur</td>
-                                  <td>Bonjour Jonathan, Nous vous contact...</td>
-                                </tr>
-                              </tbody>
-                            </table>
-                          </div><!--end row-->
+                          <?php if($userid==$_SESSION['id'])
+                          { ?>
+                              <div class="row no-gutter">
+                                <!--IF USER CONNECT AND USER ID = USER ID COOKIES -->
+                                <span class="jqueryToggle"><h5 class="policy_title"><strong><?php echo $tr['prof2'] ?> <img id="imgCat" src="./img/flechetoggle.png" width="15" height="15"></strong></h5>
+                                <table class="table contBorder">
+                                  <thead>
+                                    <tr>
+                                      <th><?php echo $tr['prof3'] ?></th>
+                                      <th><?php echo $tr['prof4'] ?></th>
+                                      <th><?php echo $tr['prof5'] ?></th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                      <td>
+                                        <?php
+                                        $str="Proximus Recrutement";
+                                        if (strlen($str) > 20)
+                                        $str = substr($str, 0, 17) . '...';
+                                        echo $str; ?>
+                                      </td>
+                                      <td>
+                                        <?php
+                                        $str="Employé gestion bureautique à temps plein";
+                                        if (strlen($str) > 20)
+                                        $str = substr($str, 0, 17) . '...';
+                                        echo $str; ?>
+                                      </td>
+                                      <td>
+                                        <?php
+                                        $str="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et placerat dui. In posuere metus et elit placerat tristique. Maecenas eu est in sem ullamcorper tincidunt.";
+                                        if (strlen($str) > 40)
+                                        $str = substr($str, 0, 37) . '...';
+                                        echo $str; ?>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td>BeCode</td>
+                                      <td>Recrutement formateur</td>
+                                      <td>Bonjour Jonathan, Nous vous contact...</td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div><!--end row-->
+                          <?php } ?>
                             <div class="row no-gutter">
                                 <span class="jqueryToggle2"><h5 class="col-lg-12 col-md-12 policy_title" id="top"><?php echo $tr['prof6'] ?><img id="imgCat2" src="./img/flechetoggle.png" width="15" height="15"></h5><br><br>
 
