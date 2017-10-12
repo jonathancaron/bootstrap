@@ -55,6 +55,7 @@
                               <div class="row no-gutter">
                                 <!--IF USER CONNECT AND USER ID = USER ID COOKIES -->
                                 <span class="jqueryToggle"><h5 class="policy_title"><strong><?php echo $tr['prof2'] ?> <img id="imgCat" src="./img/flechetoggle.png" width="15" height="15"></strong></h5>
+                                </span>
                                 <table class="table contBorder">
                                   <thead>
                                     <tr>
@@ -98,7 +99,7 @@
                           <?php } ?>
                             <div class="row no-gutter">
                                 <span class="jqueryToggle2"><h5 class="col-lg-12 col-md-12 policy_title" id="top"><?php echo $tr['prof6'] ?><img id="imgCat2" src="./img/flechetoggle.png" width="15" height="15"></h5><br><br>
-
+                                </span>
                                       <div class="contBorder2">
 
                                         <p><?php echo $tr['prof7'] ?></p>
