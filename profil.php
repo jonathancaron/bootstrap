@@ -15,7 +15,7 @@
 
       <?php
         $userid = $_GET['id'];
-        $query=$bdd->prepare('SELECT id, email, mdp, prenom, nom, titre, status, denomination, sexe, numtel, siteweb FROM users WHERE id = :id');
+        $query=$bdd->prepare('SELECT id, email, mdp, prenom, nom, titre, status, denomination, sexe, numtel, siteweb, avatar FROM users WHERE id = :id');
         $query->bindValue(':id',$userid, PDO::PARAM_STR);
         $query->execute();
         $data=$query->fetch();
@@ -28,6 +28,7 @@
         $usersexe = $data['sexe'];
         $usernumtel = $data['numtel'];
         $usersiteweb = $data['siteweb'];
+        $useravatar = $data['avatar'];
         $query->CloseCursor();
 
         error_reporting(E_ALL);
@@ -41,7 +42,7 @@
                 <div class="fea">
                   <div class="col-sm-12 col-md-4">
                       <h3><?php echo $tr['prof1'] ?></h3>
-                       <img src="./img/mentor.jpg" class="img-rounded" width="220" height="200">
+                        <?php echo "<img src='./img/avatars/$userid/$useravatar' class='img-rounded' width='220' height='220'>"; ?>
                       <p><span class="profilTitre"><?php echo "$userprenom $usernom" ?></span><br><span class="profilSousTitre"><?php echo $usertitre ?></span></p>
                       <img src="./img/certifie.png" class="img-rounded"  width="50" height="50">
                       <img src="./img/cvok.png" class="img-rounded"  width="35" height="35">
