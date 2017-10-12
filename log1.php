@@ -45,7 +45,7 @@
                 $_SESSION['numtel'] = $data['numtel'];
                 $_SESSION['siteweb'] = $data['siteweb'];
           	    $message = '';
-                header('Location: ./index.php');
+                echo "<script type='text/javascript'> document.location = 'index.php'; </script>";
 
 
           	}
@@ -72,7 +72,6 @@
                 <img src="./img/error.png" alt="erreur" width="100px" height="100px"><br>
                 <br>
                 <?php echo $message; ?>
-                <br>
 
               </div>
             </div>

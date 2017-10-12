@@ -12,6 +12,25 @@
     if($_SESSION['id'] ==0)
       { echo "<script type='text/javascript'> document.location = 'index.php'; </script>"; }
     ?>
+
+      <?php
+        $userid = $_GET['id'];
+        $query=$bdd->prepare('SELECT id, email, mdp, prenom, nom, titre, status, denomination, sexe, numtel, siteweb FROM users WHERE id = :id');
+        $query->bindValue(':id',$userid, PDO::PARAM_STR);
+        $query->execute();
+        $data=$query->fetch();
+        $usermail = $data['email'];
+        $userprenom = $data['prenom'];
+        $usernom = $data['nom'];
+        $usertitre = $data['titre'];
+        $userstatus = $data['status'];
+        $userdenomination = $data['denomination'];
+        $usersexe = $data['sexe'];
+        $usernumtel = $data['numtel'];
+        $usersiteweb = $data['siteweb'];
+
+      ?>
+
         <section id ="feature" class="section-padding">
 
           <div class="container">
@@ -20,7 +39,7 @@
                   <div class="col-sm-12 col-md-4">
                       <h3><?php echo $tr['prof1'] ?></h3>
                        <img src="./img/mentor.jpg" class="img-rounded" width="220" height="200">
-                      <p><span class="profilTitre">Jonathan Caron</span><br><span class="profilSousTitre">Développeur web</span></p>
+                      <p><span class="profilTitre"><?php echo "$userprenom $usernom" ?></span><br><span class="profilSousTitre"><?php echo $usertitre ?></span></p>
                       <img src="./img/certifie.png" class="img-rounded"  width="50" height="50">
                       <img src="./img/cvok.png" class="img-rounded"  width="35" height="35">
                   </div>
@@ -88,12 +107,12 @@
                                       <div class="row no-gutter">
                                 		   <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5 hero-box half">
                                 			<p><?php echo $tr['prof8'] ?><br>
-                                			<strong>0473/53.38.01</strong></p>
+                                			<strong><?php echo $usernumtel ?></strong></p>
                                 		</div>
 
                                        <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5 hero-box half">
                                 			<p><?php echo $tr['prof9'] ?><br>
-                                			<strong><a class="small-link" href="mailto:jonathan.caron04@gmail.com">jonathan.caron04@gmail.com</a></strong></p>
+                                			<strong><a class="small-link" href="<?php echo "$usermail" ?>"><?php echo $usermail ?></a></strong></p>
                                 		</div>
                                   </div><!-- end row-->
 
