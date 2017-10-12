@@ -55,6 +55,7 @@
                     		<div class="col-xs-12 col-sm-9  col-md-9 col-lg-8 policy_left_column ">
                           <?php if($userid==$_SESSION['id'])
                           { ?>
+                              <a href="./setting.php"><img src="./img/setting.png" type="button" value="Setting" width="40px" height="40px"></a><br><br>
                               <div class="row no-gutter">
                                 <!--IF USER CONNECT AND USER ID = USER ID COOKIES -->
                                 <span class="jqueryToggle"><h5 class="policy_title"><strong><?php echo $tr['prof2'] ?> <img id="imgCat" src="./img/flechetoggle.png" width="15" height="15"></strong></h5>

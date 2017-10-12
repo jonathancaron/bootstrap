@@ -34,11 +34,10 @@
               <div class="feature-info">
                 <div class="fea">
                   <div class="col-sm-12 col-md-12">
-                    <p>ID du message <?php echo $mid ?> </p>
-                      <img src="./img/return.png" type="button" value="Retourner à la page précédente" onclick="history.back()" width="50px" height="50px"><br>
+                      <img src="./img/return.png" type="button" value="Retourner à la page précédente" onclick="history.back()" width="40px" height="40px"><br>
 
                   <table class="table contBorder">
-
+                    <br>
                       <tr>
                         <th class="col-md-1">De</th>
                         <td>
