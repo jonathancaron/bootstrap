@@ -81,9 +81,18 @@
                                            if($row['pour'] == $_SESSION['id']){ ?>
                                              <tr>
                                                <td>
-                                                 <?php $str=$row['de'];
+
+                                                 <?php
+                                                 $query=$bdd->prepare('SELECT prenom, nom FROM users WHERE id = :id');
+                                                 $query->bindValue(':id',$row['de'], PDO::PARAM_STR);
+                                                 $query->execute();
+                                                 $data=$query->fetch();
+
+                                                 $str1=$data['prenom'];
+                                                 $str2=$data['nom'];
+                                                 $str = "$str1 $str2";
                                                  if (strlen($str) > 20)
-                                                 $str = substr($str, 0, 17) . '...';
+                                                 $str = substr($str, 0, 17);
                                                  echo $str;
                                                  ?>
 
@@ -107,7 +116,7 @@
                                            <?php
                                             }
                                           }
-
+                                          $sth->CloseCursor();
                                         ?>
 
                                   </tbody>
